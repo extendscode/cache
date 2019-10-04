@@ -23,4 +23,11 @@ $key = $cache->get('key', function() {
   return ...
 });
 
+// Puts data into the cache for time limited or undefined.
+$cache->put('key', 'value', $lifetime = null);
+
+// if $lifetime == null take ttl
+// if $lifetime == -1 take value undefined
+// if $filetime == xxxx take xxxx in seconds
+
 ```
