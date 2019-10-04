@@ -9,9 +9,9 @@ A simple PHP class for caching
 require 'vendor/autoload.php';
 
 $cache = new Cache([
-  'path' => 'your-path',    // path store
+  'path' => 'tmp/cache',    // path store
   'ttl' => 3600,            // time of life default 1 hour
-  'prefix' => 'my_cache_'   // prefix name not duplicate
+  'prefix' => 'cache_'      // prefix name not duplicate
 ]);
 
 ```
